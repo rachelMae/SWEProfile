@@ -1,0 +1,201 @@
+/*
+COLOR PALLATE
+https://coolors.co/1a1f16-1e3f20-345830-4a7856-94ecbe
+1A1F16 - dark jungle green
+1E3F20 - forrest green traditional
+345830 - hunter green
+4A7856 - amazon
+94ECBE - magic mint
+*/
+
+/* Global styles
+---------------------------------- */
+html {
+  box-sizingh:border-box;
+}
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  color: #1A1F16;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a{
+  color: #345830;
+}
+a:hover{
+ text-decoration: none;
+}
+h1{
+  font-size: 80px;
+}
+h2{
+  font-size: 30px;
+}
+h1, h2 {
+  font-family: 'Major Mono Display', monospace;
+
+}
+.content-wrap{
+  max-width:800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3{
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p{
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #1E3F20;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+/* Profile
+---------------------------------- */
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+.profile {
+  background: #1E3F20;
+  color: #94ECBE;
+}
+.profile .btn{
+  color: #4A7856;
+  background: #94ECBE;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.profile .btn:hover{
+  background: rgba( 30, 63, 32, 80%);
+}
+.profile-item {
+    overflow: hidden;
+}
+
+/* Projects
+---------------------------------- */
+.projects{
+  background: #94ECBE;
+}
+.projects a{
+
+}
+.projects .btn{
+  color: #94ECBE;
+  background: #1E3F20;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover{
+  background: rgba( 30, 63, 32, 80%);
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3{
+  margin-top: 0;
+}
+/* Work
+---------------------------------- */
+.work-experience{
+  background: #4A7856;
+}
+.work-experience .btn{
+  color: #94ECBE;
+  background: #1E3F20;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.work-experience .btn:hover{
+  background: rgba( 30, 63, 32, 80%);
+}
+/* Education
+---------------------------------- */
+.education{
+  background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+  background-size: cover;
+  /*background-position: top right;*/
+  padding-bottom: 100px;
+}
+.education p{
+  width: 60%;
+}
+
+/* Contact
+---------------------------------- */
+footer{
+  background: #1A1F16;
+  color: #94ECBE;
+}
+.contact-list{
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a{
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Responsive
+---------------------------------- */
+@media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .profile-item img {
+    float: right;
+    margin-left: 20px;
+  }
+  .job-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+  }
+  .contact-list{
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:749px){
+  h1 {
+    font-size: 55px;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
