@@ -11,25 +11,38 @@
   </head>
   <body>
     <main>
-      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <!-- ***********************  ABOUT  *********************** -->
       <header>
-        <div class="content-wrap profile">
+        <div class="content-wrap">
 
           <h1>Rachel Dauns</h1>
           <h2>Software Engineer</h2>
           <!-- cited for skip list https://www.w3schools.com/accessibility/accessibility_skip_links.php -->
-          <a href="#Education" class="skip">Education</a>
-          <a href="#Experience" class="skip">Experience</a>
-          <a href="#Projects" class="skip">Projects</a>
-          <a href="#Contacts" class="skip">Contacts</a>
-          <section class="profile-item">
-            <img src="images/IMG_4919_2.jpg" alt="Rachel dressed up">
-            <p>Hi, welcome to my website. This serves as a overview of my resume and exhibits my interests in Software Engineering and Web Development. I am eagar to join the techrangers team this fall and learn more web development skills while helping UCF create accessible content for everyone.</p>
-            <p>Enjoy clicking around!</p>
-          </section>
+          <nav>
+            <ul class = "list">
+              <li><a href="#Profile" class="skip">Profile</a></li>
+              <li><a href="#Education" class="skip">Education</a></li>
+              <li><a href="#Experience" class="skip">Experience</a></li>
+              <li><a href="#Projects" class="skip">Projects</a></li>
+              <li><a href="#Contacts" class="btn">Contacts</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
-
+      <!-- ******************  PROFILE ****************** -->
+      <section class="profile" id="Profile">
+        <div class ="content-wrap">
+          <img src="images/IMG_4919_2.jpg" alt="Rachel dressed up">
+          <h2>Profile</h2>
+          <p>Hi, welcome to my website. This serves as a overview of my resume and exhibits my interests in Software Engineering and Web Development. I am eagar to join the techrangers team this fall and learn more web development skills while helping UCF create accessible content for everyone.</p>
+          <p>Enjoy clicking around!</p>
+          <div class="profile-list">
+            <a class ="btn" href="mailto:rach.dauns@gmail.com">rach.dauns@gmail.com</a>
+            <a class =btn href="https://www.linkedin.com/in/rachel-dauns-70b5a2179/" target="_blank">LinkedIn</a>
+            <a class =btn href="images/resume.pdf" target="_blank">Resume PDF</a>
+          </div>
+        </div>
+      </section>
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
       <section class = "education" id="Education">
         <div class="content-wrap item-details">
@@ -39,7 +52,7 @@
           <section>
             <h3>University of Central Florida - Orlando</h3>
             <p>Bachleors of Computer Science, 2020-2024</p>
-            <p>History Minor</p>
+            <p>Minor in History</p>
           </section>
         </div>
         <!-- End of School UCF block. -->
@@ -60,12 +73,11 @@
             </div>
             <div class ="job-summary">
               <p>As a part-time web developer, I have been learning front end development using tools like HTML and CSS.</p>
-              <p>Relevant Skills:</p>
+              <p>Skills:</p>
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Git/ Verion Control</li>
-                <li>Python</li>
               </ul>
           </div>
           </section>
@@ -80,7 +92,7 @@
             </div>
             <div class ="job-summary">
               <p>I worked on the Madden Shield team to ensure crash reporting for the stability of the game.</p>
-              <p>Relevant Skills:</p>
+              <p>Skills:</p>
               <ul>
                 <li>C++</li>
                 <li>Perforce/ Version Control</li>
@@ -101,17 +113,33 @@
           <!-- Parrot Project -->
           <section class= "project-item">
             <img src="images/parrot2.jpeg" alt="Hardware used for the Project">
-            <h3>Personal Parrot</h3>
-            <p>KnightsHacks 2021 Best Hardware project winner.</p>
-            <a class="btn" href="https://devpost.com/software/personal-parrot" target="_blank">View Personal Parrot</a>
+            <div>
+              <h3>Personal Parrot</h3>
+              <p>KnightsHacks 2021 Best Hardware project winner.</p>
+              <p>Skills:</p>
+              <ul>
+                <li>Python</li>
+                <li>Arduino</li>
+                <li>C</li>
+              </ul>
+              <a class="btn" href="https://devpost.com/software/personal-parrot" target="_blank">View Personal Parrot</a>
+            </dev>
           </section>
         <!-- End of Parrot Project block. -->
         <!-- Copy the whole <section> block to add more projects. -->
         <section class="project-item">
-          <img src="images/thumbnail-1.jpg" alt="panda-placeholder">
-          <h3>Dynamics Compilation</h3>
-          <p>Research for a UCF Professor making engineering mini games.</p>
-          <a class="btn" href="" target="_blank">View Project</a>
+          <img src="images/bearHunting.png" alt="Bear Hunting Game Menu Screen">
+          <div>
+            <h3>Dynamics Compilation</h3>
+            <p>Research for a UCF Professor making engineering mini games.</p>
+            <p>Skills:</p>
+            <ul>
+              <li>C#</li>
+              <li>Unity</li>
+              <li>Plastic/ Verion Control</li>
+            </ul>
+          </dev>
+          <!-- <a class="btn" href="" target="_blank">View Project</a> -->
         </section>
       <!-- End of Project block. -->
         </div>
@@ -121,9 +149,9 @@
       <footer>
         <div class="content-wrap">
           <h2>Let's Keep in Touch!</h2>
-
+          <img src="images/RachelFish.jpg" alt="Rachel Holding a Fish">
           <!-- Social media and contact links. Add or remove any networks. -->
-          <ul class = "contact-list" id =Contacts>
+          <ul class = "list" id =Contacts>
             <li><a href="mailto:rach.dauns@gmail.com">rach.dauns@gmail.com</a></li>
             <li><a href="https://github.com/rachelMae" target="_blank">Github</a></li>
             <li><a href="https://ucf.joinhandshake.com/stu/users/25858155" target="_blank">Handshake</a></li>

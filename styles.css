@@ -26,15 +26,17 @@ body {
 }
 img {
   width: 300px;
+  border-radius: 4px;
 }
 a{
-  color: #345830;
+  color: #94ECBE;
 }
 a:hover{
  text-decoration: none;
 }
 h1{
   font-size: 80px;
+  margin-bottom: 0;
 }
 h2{
   font-size: 30px;
@@ -59,86 +61,56 @@ h3{
   margin: 0;
 }
 .divider > section {
-  border-bottom: 1px dashed #1E3F20;
+  border-bottom: 1px dashed #94ECBE;
   padding: 25px 0;
 }
 .divider > section:last-of-type {
   border-bottom: none;
 }
+.list{
+  list-style-type: none;
+  padding: 0;
+}
+.list a{
+  padding: 15px;
+  display: inline-block;
+}
+.btn{
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+/* Header
+---------------------------------- */
+header {
+  background: #1E3F20;
+  color: #94ECBE;
+}
+.skip {
+  overflow: hidden;
+}
+
 /* Profile
 ---------------------------------- */
-.skip {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.skip:focus {
-  position: static;
-  width: auto;
-  height: auto;
-}
-.profile {
-  background: #1E3F20;
-  color: #94ECBE;
+.profile{
+  background: #1A1F16;
+  color: #4A7856;
 }
 .profile .btn{
-  color: #4A7856;
-  background: #94ECBE;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
-}
-.profile .btn:hover{
-  background: rgba( 30, 63, 32, 80%);
-}
-.profile-item {
-    overflow: hidden;
-}
-
-/* Projects
----------------------------------- */
-.projects{
-  background: #94ECBE;
-}
-.projects a{
-
-}
-.projects .btn{
-  color: #94ECBE;
-  background: #1E3F20;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
-}
-.projects .btn:hover{
-  background: rgba( 30, 63, 32, 80%);
-}
-.project-item {
-  overflow: hidden;
-}
-.project-item h3{
-  margin-top: 0;
-}
-/* Work
----------------------------------- */
-.work-experience{
+  color: #1A1F16;
   background: #4A7856;
 }
-.work-experience .btn{
-  color: #94ECBE;
-  background: #1E3F20;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
+.profile .btn:hover{
+  background: rgba( 74, 120, 86, 80%);
 }
-.work-experience .btn:hover{
-  background: rgba( 30, 63, 32, 80%);
+.profile img {
+  width: 250px;
+  height: 300px;
+  border-radius: 4px;
+}
+.profile-list a{
+  display:inline-block;
 }
 /* Education
 ---------------------------------- */
@@ -151,20 +123,45 @@ h3{
 .education p{
   width: 60%;
 }
+/* Work
+---------------------------------- */
+.work-experience{
+  background: #4A7856;
+  color: #94ECBE;
+}
+.work-experience .btn{
+  color: #4A7856;
+  background: #94ECBE;
+}
+.work-experience .btn:hover{
+  background: rgba( 148, 236, 190, 80%);
+}
+/* Projects
+---------------------------------- */
+.projects{
+  background: #94ECBE;
+}
+.projects .btn{
+  color: #94ECBE;
+  background: #1E3F20;
+}
+.projects .btn:hover{
+  background: rgba( 30, 63, 32, 80%);
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3{
+  margin-top: 0;
+}
 
 /* Contact
 ---------------------------------- */
 footer{
   background: #1A1F16;
   color: #94ECBE;
-}
-.contact-list{
-  list-style-type: none;
-  padding: 0;
-}
-.contact-list a{
-  padding: 15px;
-  display: inline-block;
+  background-image: url(../images/wooden-background.jpg);
+  background-size: cover;
 }
 
 /* Responsive
@@ -177,16 +174,21 @@ footer{
     float: left;
     margin-right: 20px;
   }
-  .profile-item img {
-    float: right;
-    margin-left: 20px;
+  .profile img {
+    float: left;
+    margin-right: 30px;
   }
   .job-item{
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 30px;
   }
-  .contact-list{
+  .project-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+  }
+  .list{
     display: flex;
     justify-content: center;
   }
@@ -195,7 +197,10 @@ footer{
   h1 {
     font-size: 55px;
   }
-  .contact-list a {
+  .list a {
     padding: 5px;
+  }
+  .profile-list a{
+    margin-bottom: 10px;
   }
 }
