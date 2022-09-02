@@ -5,7 +5,8 @@ https://coolors.co/1a1f16-1e3f20-345830-4a7856-94ecbe
 1E3F20 - forrest green traditional
 345830 - hunter green
 4A7856 - amazon
-94ECBE - magic mint
+9BC494 - magic mint
+#C5B192 - tan
 */
 
 /* Global styles
@@ -27,9 +28,6 @@ body {
 img {
   width: 300px;
   border-radius: 4px;
-}
-a{
-  color: #94ECBE;
 }
 a:hover{
  text-decoration: none;
@@ -61,7 +59,7 @@ h3{
   margin: 0;
 }
 .divider > section {
-  border-bottom: 1px dashed #94ECBE;
+  border-bottom: 1px dashed white;
   padding: 25px 0;
 }
 .divider > section:last-of-type {
@@ -78,31 +76,39 @@ h3{
 .btn{
   text-decoration: none;
   padding: 8px;
-  border-radius: 4px;
   display: inline-block;
 }
 /* Header
 ---------------------------------- */
 header {
   background: #1E3F20;
-  color: #94ECBE;
+  color: white;
 }
-.skip {
-  overflow: hidden;
+.skip{
+  color: #1E3F20;
+  background: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px;
+  margin-left: 5px;
+
+}
+.skip :hover{
+  background: rgba( 150, 118, 68, 80%);
 }
 
 /* Profile
 ---------------------------------- */
 .profile{
   background: #1A1F16;
-  color: #4A7856;
+  color: #9BC494;
 }
 .profile .btn{
   color: #1A1F16;
-  background: #4A7856;
+  background: #9BC494;
 }
 .profile .btn:hover{
-  background: rgba( 74, 120, 86, 80%);
+  background: rgba( 155, 196, 148, 80%);
 }
 .profile img {
   width: 250px;
@@ -126,27 +132,45 @@ header {
 /* Work
 ---------------------------------- */
 .work-experience{
-  background: #4A7856;
-  color: #94ECBE;
+  background: #1A1F16;
+  color: #9BC494;
 }
 .work-experience .btn{
-  color: #4A7856;
-  background: #94ECBE;
+  color: #1A1F16;
+  background: #9BC494;
+  padding: 3px;
 }
 .work-experience .btn:hover{
-  background: rgba( 148, 236, 190, 80%);
+  background: rgba( 155, 196, 148, 80%);
+}
+.work-experience img{
+  height: 200px;
+  width: 200px;
+}
+.work-experience .divider > section {
+  border-bottom: 1px dashed #9BC494;
+  padding: 25px 0;
+}
+.work-experience .divider > section:last-of-type {
+  border-bottom: none;
 }
 /* Projects
 ---------------------------------- */
 .projects{
-  background: #94ECBE;
+  background: #1A1F16;
+  color: white;
+  background-image: url(../images/wooden-background.jpg);
+  background-size: cover;
 }
 .projects .btn{
-  color: #94ECBE;
-  background: #1E3F20;
+  color: #1A1F16;
+  background: white;
+}
+.projects .inline-btn .btn{
+  padding: 3px;
 }
 .projects .btn:hover{
-  background: rgba( 30, 63, 32, 80%);
+  background: rgba( 255, 255, 255, 80%);
 }
 .project-item {
   overflow: hidden;
@@ -158,10 +182,13 @@ header {
 /* Contact
 ---------------------------------- */
 footer{
-  background: #1A1F16;
-  color: #94ECBE;
-  background-image: url(../images/wooden-background.jpg);
-  background-size: cover;
+  background: #1E3F20;
+  color: white;
+}
+.contacts a{
+  background: #1E3F20;
+  margin-left: 8px;
+  color: white;
 }
 
 /* Responsive
@@ -180,7 +207,7 @@ footer{
   }
   .job-item{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr;
     column-gap: 30px;
   }
   .project-item{
